@@ -5,13 +5,13 @@ A lark of sorts.
 To develop:
 
 ```bash
-yarn install && yarn start
+npm install && npm start
 ```
 
 For production:
 
 ```bash
-yarn build
+npm run build
 # use the server of your choice
 ```
 
