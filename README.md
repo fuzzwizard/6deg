@@ -11,7 +11,7 @@ npm install && npm start
 For production:
 
 ```bash
-npm run build
+npm install && npm run build
 # use the server of your choice
 ```
 
