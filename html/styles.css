@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+a, a:active {
+    color: rgba(133, 58, 67, 1);
+}
+a:visited {
+    color: rgba(86, 52, 71, 1);
+}
+
+body {
+    background-color: rgba(119, 119, 119, 1);
+    color: rgba(226, 229, 223, 1);
+}
+
+#app header {
+    padding: 25px 15px;
+}
+
+#app header * {
+    display: inline-block;
+}
+
+#app header h1 {
+    font-family: 'Dosis', sans-serif;
+}
+
+.artist-panel {
+    border: 1px solid rgba(226, 229, 223, 1);
+    background-color: rgba(226, 229, 223, 1);
+    color: rgba(119, 119, 119, 1);
+    border-radius: 8px;
+    min-width: 600px;
+    width: 75%;
+    padding: 25px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+/*clearfix*/
+.artist-panel:after {
+    height: 1px;
+}
+
+.artist-panel main {
+    float: left;
+}
+
+.related-artists {
+    width: 50%;
+    text-align: left;
+    float: right;
+    list-style-type: none;
+}
+
+.related-artists header {
+    font-size: 125%;
+}
+
+.related-artists .artist-container {
+    text-align: left;
+    width: auto;
+    margin-bottom: 12px;
+}
+
+.related-artists .artist-entry-photo {
+    max-width: 64px;
+    display: inline-block;
+}
+
+.related-artists .artist-entry-text {
+    margin: 0 12px !important;
+    display: inline-block;
+    color: rgba(133, 58, 67, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-artist-container img {
+    max-width: 350px;
+}
+
+.main-artist-container .artist-entry-text {
+    font-size: 200%;
+}
+
+.score-counter {
+    color:  rgba(151, 163, 155, 1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 300%;
+    margin: 25px;
+}
+
+.name-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.name-modal form {
+    max-width: 300px;
+    margin: 45px auto;
+    text-align: left;
+}
+.name-modal form * {
+    display: inline-block;
+    margin-bottom: 15px;
+}
