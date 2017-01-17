@@ -9,7 +9,6 @@ export const raise = e => { throw e }
 export const selectRandom = array =>
   array[Math.floor(Math.random() * array.length)]
 
-
 /* selectFirst
  *
  * Selects a the first item from `array` and returns it, with type protection

@@ -3,7 +3,6 @@
 // import 'whatwg-fetch'
 import {raise, selectRandom, selectFirst} from '../util'
 
-
 /* httpGet
  *
  * ARGUMENTS:

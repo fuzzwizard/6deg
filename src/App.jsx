@@ -48,7 +48,6 @@ export default class App extends React.Component {
     })
   }
 
-
   // Passed to the new game modal to starting the game.
   newKeyArtistHandler (name) {
     getNewKeyArtist(name, artist => {
