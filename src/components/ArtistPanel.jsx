@@ -2,6 +2,10 @@ import React from 'react'
 
 import ArtistEntry from './ArtistEntry.jsx'
 
+/* ArtistPanel
+ *
+ *  Displays a given artist and it's related artists.
+ ***/
 export default ({artist, related, getNextArtist}) => (
   <section className='artist-panel'>
     <main className='main-artist-container'>

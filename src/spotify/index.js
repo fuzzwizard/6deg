@@ -104,6 +104,15 @@ export const getNextArtist = (id, callback) => {
   })
 }
 
+/* getNewKeyArtist
+ *
+ * ARGUMENTS:
+ * name: String, callback: Function
+ * RETURN: void
+ *
+ * Contact's Spotify's artist search api with query `name` and passes the first
+ * object of the return to the callback.
+ **/
 export const getNewKeyArtist = (name, callback) => {
   searchArtist(name, results => {
     callback(selectFirst(results.artists.items))

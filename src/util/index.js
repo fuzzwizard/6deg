@@ -1,20 +1,42 @@
 export const raise = e => { throw e }
 
-// TODO: Get a proper shuffle algorithim in here. Fisher-Yates, prolly.
+/* selectRandom
+ *
+ * Selects a random item from `array` and returns it.
+ *
+ * TODO: Get a proper shuffle algorithim in here. Fisher-Yates, prolly.
+ **/
 export const selectRandom = array =>
   array[Math.floor(Math.random() * array.length)]
 
-export const selectFirst = a =>
-  Array.isArray(a) ? a[0] || null : null
 
-export const selectLast = a =>
-  Array.isArray(a) ? a[a.length - 1] || null : null
+/* selectFirst
+ *
+ * Selects a the first item from `array` and returns it, with type protection
+ * and nullability.
+ **/
+export const selectFirst = array =>
+  Array.isArray(array) ? array[0] || null : null
 
-export const iterateN = (n, fn, result) =>
-  n > 0 ? iterateN(n - 1, fn, fn(result)) : result
+/* selectLast
+ *
+ * Selects a the last item from `array` and returns it, with type protection
+ * and nullability.
+ **/
+export const selectLast = array =>
+  Array.isArray(array) ? array[array.length - 1] || null : null
 
+/* prop
+ *
+ * Returns a function which safely extracts `field` from `obj`.
+ **/
 export const prop = field => obj => obj ? obj[field] : null
 
+/* sortByPropAscending & sortByPropDescending
+ *
+ * Returns a function for Array.sort to use, which sorts objects in said array
+ * by the provided property.
+ **/
 export const sortByPropAscending = p => (a, b) =>
   (prop(p)(a) || -Infinity) - (prop(p)(b) || -Infinity)
 

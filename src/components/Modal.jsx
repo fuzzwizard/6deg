@@ -9,10 +9,12 @@ export default class NameModal extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
+  // Updates the value state as the text form changes
   handleChange (event) {
     this.setState({value: event.target.value})
   }
 
+  // Grabs a new key artist from the form for the game
   handleSubmit (event) {
     event.preventDefault()
     this.props.getNewKeyArtist(this.state.value)

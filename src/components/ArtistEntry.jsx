@@ -11,6 +11,10 @@ const getSmallestImgURL = (imgs = []) =>
 const getLargestImgURL = (imgs = []) =>
   prop('url')(selectLast(imgs.sort(sortByPropAscending('height'))))
 
+/* ArtistEntry
+ *
+ * Enumerates an individual artist in the related list or main section.
+ ***/
 export default ({artist, getNextArtist, large = false}) => {
   if (!artist) return (<i />)
 
