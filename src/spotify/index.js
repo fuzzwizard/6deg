@@ -12,6 +12,7 @@ import {raise, selectRandom, selectFirst} from '../util'
  *
  * Utility method for httpGets. Passes JSON parsed data to `callback`.
  **/
+
 const httpGet = (url, callback) =>
   window.fetch(url)
   .then(response => response.json())
